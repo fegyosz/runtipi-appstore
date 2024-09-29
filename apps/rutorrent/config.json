@@ -17,20 +17,22 @@
   "source": "https://github.com/fegyosz/docker-rtorrent-rutorrent/",
   "form_fields": [
     {
-      "type": "text",
-      "label": "Username",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "TRANSMISSION_USERNAME"
+      "type": "number",
+      "label": "ruTorrent HTTP port",
+      "max": 65535,
+      "min": 1,
+      "required": false,
+      "default": 8080
+      "env_variable": "RUTORRENT_PORT"
     },
     {
-      "type": "password",
-      "label": "Password",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "TRANSMISSION_PASSWORD"
+      "type": "number",
+      "label": "Incoming port",
+      "max": 65535,
+      "min": 1,
+      "required": false,
+      "default": 50000
+      "env_variable": "RT_INC_PORT"
     }
   ],
   "supported_architectures": ["amd64"],
