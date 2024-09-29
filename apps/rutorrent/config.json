@@ -3,10 +3,7 @@
   "name": "ruTorrent",
   "available": true,
   "exposable": true,
-  "port": 8089,
-  "requirements": {
-    "ports": [50000]
-  },
+  "port": 8080,
   "id": "rutorrent",
   "tipi_version": 10,
   "version": "1.0",
