@@ -20,6 +20,10 @@ services:
       - ${ROOT_FOLDER_HOST}/media/torrents:/media/torrents
     ports:
       - ${APP_PORT}:${RUTORRENT_PORT}
+      - ${RT_INC_PORT}:${RT_INC_PORT}
+      - ${RT_DHT_PORT}:${RT_DHT_PORT}
+      - ${XMLRPC_PORT}:${XMLRPC_PORT}
+      - ${WEBDAV_PORT}:${WEBDAV_PORT}
     networks:
       - tipi_main_network # That should not be changed
     labels: # Use your editors search and replace feature to replace all instances of "rutorrent" with your app name in the traefik labels
