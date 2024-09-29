@@ -13,7 +13,7 @@
   "categories": ["utilities"],
   "description": "rTorrent is a text-based BitTorrent client, designed for high performance and low resource usage. ruTorrent is a web-based front-end for rTorrent, providing a user-friendly interface for managing torrents through a web browser.",
   "short_desc": "rtorrent with rutorrent gui",
-  "author": "rakshasa and Novik",
+  "author": "rakshasa, Novik and crazy-max and many others",
   "source": "https://github.com/fegyosz/docker-rtorrent-rutorrent/",
   "form_fields": [
     {
