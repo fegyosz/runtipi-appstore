@@ -4,6 +4,8 @@ rTorrent is a text-based BitTorrent client that runs in a terminal, designed for
 
 ruTorrent is a web-based front-end for rTorrent, providing a user-friendly interface for managing torrents through a web browser. It offers various plugins and features to enhance the functionality of rTorrent, making it easier to use for users who prefer a graphical interface.
 
+Based on package from crazy-max at https://github.com/crazy-max/docker-rtorrent-rutorrent
+
 
 ## Default credentials
 
