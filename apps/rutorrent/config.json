@@ -33,6 +33,33 @@
       "required": false,
       "default": 50000
       "env_variable": "RT_INC_PORT"
+    },
+    {
+      "type": "number",
+      "label": "DHT UDP port",
+      "max": 65535,
+      "min": 1,
+      "required": false,
+      "default": 6881
+      "env_variable": "RT_DHT_PORT"
+    },
+    {
+      "type": "number",
+      "label": "XMLRPC port through nginx over SCGI socket",
+      "max": 65535,
+      "min": 1,
+      "required": false,
+      "default": 8000
+      "env_variable": "XMLRPC_PORT"
+    },
+    {
+      "type": "number",
+      "label": "WebDAV port on completed downloads",
+      "max": 65535,
+      "min": 1,
+      "required": false,
+      "default": 9000
+      "env_variable": "WEBDAV_PORT"
     }
   ],
   "supported_architectures": ["amd64"],
