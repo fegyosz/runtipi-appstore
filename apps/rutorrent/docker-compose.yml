@@ -7,6 +7,11 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+      - RUTORRENT_PORT=${RUTORRENT_PORT}
+      - RT_INC_PORT=${RT_INC_PORT}
+      - RT_DHT_PORT=${RT_DHT_PORT}
+      - XMLRPC_PORT=${XMLRPC_PORT}
+      - WEBDAV_PORT=${WEBDAV_PORT}
       - TZ=${TZ} # Can use any env variable. See "environment variables" section in the docs
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -14,15 +19,14 @@ services:
       - ${APP_DATA_DIR}/passws:/passwd # see original package for details
       - ${ROOT_FOLDER_HOST}/media/torrents:/media/torrents
     ports:
-      - ${APP_PORT}:8080
-    restart: unless-stopped
+      - ${APP_PORT}:${RUTORRENT_PORT}
     networks:
       - tipi_main_network # That should not be changed
     labels: # Use your editors search and replace feature to replace all instances of "rutorrent" with your app name in the traefik labels
       # Main
       traefik.enable: true
       traefik.http.middlewares.rutorrent-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.rutorrent.loadbalancer.server.port: 8080 # Should be the same as the app internal port so for this example 9443
+      traefik.http.services.rutorrent.loadbalancer.server.port: ${RUTORRENT_PORT} # Should be the same as the app internal port so for this example 9443
       # Web
       traefik.http.routers.rutorrent-insecure.rule: Host(`${APP_DOMAIN}`)
       traefik.http.routers.rutorrent-insecure.entrypoints: web
