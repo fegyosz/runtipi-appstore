@@ -10,7 +10,7 @@
   "id": "rutorrent",
   "tipi_version": 10,
   "version": "1.0",
-  "categories": ["utilities"],
+  "categories": ["utilities", "media"],
   "description": "rTorrent is a text-based BitTorrent client, designed for high performance and low resource usage. ruTorrent is a web-based front-end for rTorrent, providing a user-friendly interface for managing torrents through a web browser.",
   "short_desc": "rtorrent with rutorrent gui",
   "author": "rakshasa, Novik and crazy-max and many others",
