@@ -1,7 +1,7 @@
 # Default credentials
 
 Username: admin
-Password: deluge
+Password: admin
 
 ---
 
@@ -9,7 +9,8 @@ Password: deluge
 
 | Root Folder                                  | Container Folder |
 |----------------------------------------------|------------------|
-| /runtipi/app-data/deluge/data/deluge/config	 | /config          |
+| /runtipi/app-data/rutorrent/data/	 | /data          |
+| /runtipi/app-data/rutorrent/passwd/	 | /passwd          |
 | /runtipi/media/torrents                 | /media/torrents       |
 
 ---
